@@ -23,7 +23,6 @@
             color: red;
             text-decoration: none;
             font-size: 20px;
-            padding-bottom: 20px; /* Padding para separar el título de la tabla */
         }
 
         a:hover {
@@ -100,19 +99,48 @@
             display: none;
             z-index: 999;
         }
-
         .source-0 {
             color: red; /* Cambia el color del contenido ID a rojo */
         }
+
     </style>
+    <script>
+        function mostrarMenu(contentId) {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('menu').style.display = 'block';
+            const copiarBoton = document.getElementById('copiar-enlace');
+            copiarBoton.setAttribute('data-content-id', contentId);
+            const acestreamBoton = document.getElementById('acestream');
+            acestreamBoton.setAttribute('data-content-id', contentId);
+        }
+
+        function ocultarMenu() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('menu').style.display = 'none';
+        }
+
+        function copiarAlPortapapeles(button) {
+            const contentId = button.getAttribute('data-content-id');
+            navigator.clipboard.writeText(contentId).then(() => {
+                alert('Enlace copiado al portapapeles: ' + contentId);
+                ocultarMenu();
+            });
+        }
+
+        function abrirAceStream(button) {
+            const contentId = button.getAttribute('data-content-id');
+            const acestreamLink = `acestream://${contentId}`;
+            navigator.clipboard.writeText(acestreamLink).then(() => {
+                window.open(acestreamLink, '_blank');
+                ocultarMenu();
+            });
+        }
+    </script>
 </head>
 <body>
-    <!-- Título en la parte superior -->
-    <a href="https://lukiiimohhu.github.io/futbol/index.html">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&duration=2000&pause=1&color=F7F7F7&center=true&multiline=true&width=435&lines=ACELINKS;by+luk" alt="Typing SVG" />
-    </a>
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&duration=2000&pause=1&color=F7F7F7&center=true&multiline=true&width=435&lines=ACELINKS" alt="Typing SVG" /></a>
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&duration=2000&pause=1&color=F7F7F7&center=true&multiline=true&width=435&lines=by+luk" alt="Typing SVG" /></a>
 
-    <!-- Overlay y menú -->
     <div id="overlay" onclick="ocultarMenu()"></div>
 
     <div id="menu">
@@ -121,7 +149,6 @@
         <button onclick="ocultarMenu()">Cancelar</button>
     </div>
 
-    <!-- Espacio entre el título y la tabla -->
     <div>
         <table id="tabla-eventos">
             <thead>
