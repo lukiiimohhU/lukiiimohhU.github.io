@@ -6,7 +6,7 @@
     <title>LukLinks</title>
     <style>
         body {
-            background-color: #1a1a1a; /* Negro claro */
+            background-color: #2c2c2c; /* Negro más claro */
             color: white;
             font-family: monospace; /* Fuente monospace */
             display: flex;
@@ -23,7 +23,8 @@
 
         table {
             width: 60%;
-            border-collapse: collapse;
+            border-collapse: separate; /* Corrige bordes raros */
+            border-spacing: 0;
             margin: auto;
             border-radius: 10px; /* Bordes redondeados */
             overflow: hidden;
@@ -49,6 +50,8 @@
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 5px; /* Bordes redondeados para botones */
+            font-family: monospace; /* Fuente monospace para botones */
         }
 
         button:hover {
@@ -63,7 +66,7 @@
             background-color: #222;
             padding: 20px;
             border: 1px solid #555;
-            border-radius: 10px;
+            border-radius: 10px; /* Bordes redondeados */
             display: none;
             z-index: 1000;
             text-align: center;
@@ -72,6 +75,8 @@
         #menu button {
             margin: 10px 0;
             width: 100%;
+            border-radius: 5px; /* Bordes redondeados para botones del menú */
+            font-family: monospace; /* Fuente monospace */
         }
 
         #overlay {
@@ -91,6 +96,8 @@
             document.getElementById('menu').style.display = 'block';
             const copiarBoton = document.getElementById('copiar-enlace');
             copiarBoton.setAttribute('data-content-id', contentId);
+            const acestreamBoton = document.getElementById('acestream');
+            acestreamBoton.setAttribute('data-content-id', contentId);
         }
 
         function ocultarMenu() {
@@ -106,9 +113,13 @@
             });
         }
 
-        function abrirAceStream() {
-            alert('Abrir AceStream'); // Aquí puedes implementar lógica específica si es necesario.
-            ocultarMenu();
+        function abrirAceStream(button) {
+            const contentId = button.getAttribute('data-content-id');
+            const acestreamLink = `acestream://${contentId}`;
+            navigator.clipboard.writeText(acestreamLink).then(() => {
+                alert('Enlace AceStream copiado al portapapeles: ' + acestreamLink);
+                ocultarMenu();
+            });
         }
     </script>
 </head>
@@ -117,7 +128,7 @@
 
     <div id="menu">
         <button id="copiar-enlace" onclick="copiarAlPortapapeles(this)">Copiar enlace al portapapeles</button>
-        <button onclick="abrirAceStream()">Abrir AceStream</button>
+        <button id="acestream" onclick="abrirAceStream(this)">Abrir AceStream</button>
         <button onclick="ocultarMenu()">Cancelar</button>
     </div>
 
