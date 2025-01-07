@@ -1,3 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukLinks</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Negro más claro */
+            color: white;
+            font-family: monospace; /* Fuente monospace */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 18px; /* Incremento de tamaño de fuente */
+            flex-direction: column;
+        }
+
+        a {
+            font-family: monospace;
+            color: red;
+            text-decoration: none;
+            font-size: 20px;
+            padding-bottom: 20px; /* Padding para separar el título de la tabla */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: separate; /* Corrige bordes raros */
+            border-spacing: 0;
+            margin: auto;
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #444; /* Líneas interiores más finas y claras */
+        }
+
+        th {
+            background-color: #333;
+        }
+
+        td {
+            background-color: #222;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; /* Bordes redondeados para botones */
+            font-family: monospace; /* Fuente monospace para botones */
+            font-size: 18px; /* Incremento de tamaño de fuente */
+        }
+
+        button:hover {
+            background-color: #ff4d4d;
+        }
+
+        #menu {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #222;
+            padding: 20px;
+            border: 1px solid #555;
+            border-radius: 10px; /* Bordes redondeados */
+            display: none;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #menu button {
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px; /* Bordes redondeados para botones del menú */
+            font-family: monospace; /* Fuente monospace */
+            font-size: 18px; /* Incremento de tamaño de fuente */
+        }
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            z-index: 999;
+        }
+
+        .source-0 {
+            color: red; /* Cambia el color del contenido ID a rojo */
+        }
+    </style>
+</head>
 <body>
     <!-- Título en la parte superior -->
     <a href="https://lukiiimohhu.github.io/futbol/index.html">
@@ -14,7 +122,7 @@
     </div>
 
     <!-- Espacio entre el título y la tabla -->
-    <div style="margin-top: 30px;"> <!-- Puedes ajustar el valor según lo necesites -->
+    <div>
         <table id="tabla-eventos">
             <thead>
                 <tr>
@@ -44,3 +152,4 @@
         </table>
     </div>
 </body>
+</html>
