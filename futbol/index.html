@@ -1,105 +1,68 @@
-
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 <head>
- <title>Tupla\ Elcano\.top - ZeroNet</title>
- <meta charset="utf-8" />
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- <link rel="stylesheet" href="/uimedia/all.css?rev=4625" />
- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Eventos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function mostrarModal(contentId) {
+            alert("Iniciar acción para Content ID: " + contentId);
+        }
+    </script>
 </head>
-<body style="background-color: #FFF;" class="theme-light ">
-
-<div class="unsupported" id="unsupported">
- <script nonce="Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w">document.getElementById('unsupported').style.display = "none"</script>
- <h3>ZeroNet requires JavaScript support.</h3>If you use NoScript/Tor browser: Click on toolbar icon with the notification and choose "Temp. TRUSTED" for 127.0.0.1.
-</div>
-
-<script nonce="Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w">
-// If we are inside iframe escape from it
-if (window.self !== window.top) {
-	window.open(window.location.toString().replace(/([&?])wrapper=False/, "$1").replace(/&$/, "").replace(/[&?]wrapper_nonce=[A-Za-z0-9]+/, ""), "_top");
-	window.stop();
-	document.execCommand("Stop", false);
-}
-
-// We are opened as a parent-window
-else if (window.opener && window.opener.location.toString()) {
-	document.write("Opened as child-window, stopping...");
-	window.stop();
-	document.execCommand("Stop", false);
-}
-</script>
-
-<div class="progressbar">
- <div class="peg"></div>
-</div>
-
-<!-- Fixed button -->
-<div class='fixbutton'>
- <div class='fixbutton-text'><img width=30 src='/uimedia/img/logo-white.svg'/></div>
- <div class='fixbutton-burger'>&#x2261;</div>
- <a class='fixbutton-bg' href="/1HELLoE3sFD9569CLCbHEAVqvqV7U2Ri9d/"></a>
-</div>
-
-<!-- Notifications -->
-<div class='notifications'>
- <div class='notification template'><span class='notification-icon'>!</span> <span class='body'>Test notification</span><a class="close" href="#Close">&times;</a><div style="clear: both"></div></div>
-</div>
-
-<!-- Infopanel -->
-<div class='infopanel-container'>
- <div class='infopanel'>
-  <span class='closed-num'>8</span>
-  <div class="message">
-   <span class='line line-1'>8 modified files</span><br><span class='line line-2'>content.json, data.json</span>
-  </div>
-  <a href="#Publish" class="button button-submit">Sign & Publish</a>
-  <a href="#Close" class="close">&times;</a>
- </div>
-</div>
-
-<!-- Loadingscreen -->
-<div class='loadingscreen'>
- <a href="/Config" class="loading-config">Config</a>
- <div class='loading-text console'>
- </div>
- <div class="flipper-container">
-  <div class="flipper"> <div class="front"></div><div class="back"></div> </div>
- </div>
-</div>
-
-
-<!-- Site Iframe -->
-<iframe src='about:blank' id='inner-iframe' sandbox="allow-forms allow-scripts allow-top-navigation allow-popups allow-modals allow-presentation allow-pointer-lock allow-popups-to-escape-sandbox " allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-
-<!-- Site info -->
-<script id="script_init" nonce="Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w">
-iframe_src = "/1Gg6PxRS3HD9WdfNMRAccCHmH7LGP6MTd6/?wrapper_nonce=722b1d30bdf510f8bcdefe6e2c72d414dfaeafad3256832e2236d3bd6a0e41dd"
-console.log("Changing url from " + document.getElementById("inner-iframe").src + " to " + iframe_src)
-document.getElementById("inner-iframe").src = document.getElementById("inner-iframe").src  // Workaround for Firefox back button bug
-document.getElementById("inner-iframe").src = iframe_src
-address = "1Gg6PxRS3HD9WdfNMRAccCHmH7LGP6MTd6"
-wrapper_nonce = "722b1d30bdf510f8bcdefe6e2c72d414dfaeafad3256832e2236d3bd6a0e41dd"
-wrapper_key = "b06d0eca1a3f0c49d0c40743898ad5f7a1b18257ab6106c58bfadceaa00e48cc"
-ajax_key = "4fac17d13345eee3b3137cc2c0ff24053ec7a403098ac0ea4342257cf6d4d4a3"
-postmessage_nonce_security = true
-file_inner_path = "index\.html"
-permissions = []
-show_loadingscreen = false
-server_url = ''
-script_nonce = 'Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w'
-
-if (typeof WebSocket === "undefined") {
-	tag = document.createElement('div');
-	tag.innerHTML += "<div class='unsupported'>Your browser does not support <a href='https://caniuse.com/#search=websocket'>WebSocket connections</a>.<br>Please use the latest <a href='http://outdatedbrowser.com'>Chrome or Firefox</a> browser.</div>";
-	document.body.appendChild(tag)
-}
-</script>
-<script type="text/javascript" src="/uimedia/all.js?rev=4625&lang=en" nonce="Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w"></script>
-<script nonce="Fe4ciLgyM6AZ1zw7iAv6a6SghkJxmDwyZgj6XK6idey8fBKD1p1Jbi2IXbh4Iq4w">setTimeout(window.wrapper.onWrapperLoad, 1)</script>
+<body>
+    <h1>Tabla de Eventos</h1>
+    <table id="tabla-eventos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Content ID</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>La1</td>
+                <td><span class="source-0">b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0</span></td>
+                <td><button onclick="mostrarModal('b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0')">Iniciar</button></td>
+            </tr>
+            <tr>
+                <td>La1 UHD</td>
+                <td><span class="source-0">4a714c436cb67d53cf197f9038239fddab2d8b20</span></td>
+                <td><button onclick="mostrarModal('4a714c436cb67d53cf197f9038239fddab2d8b20')">Iniciar</button></td>
+            </tr>
+            <tr>
+                <td>tdp 1080</td>
+                <td><span class="source-0">61b9b271c16f970aab43cb753c5f8be181dceece</span></td>
+                <td><button onclick="mostrarModal('61b9b271c16f970aab43cb753c5f8be181dceece')">Iniciar</button></td>
+            </tr>
+            <!-- Agrega aquí más filas del mismo modo -->
+        </tbody>
+    </table>
 </body>
 </html>
-
