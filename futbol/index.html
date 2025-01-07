@@ -4,146 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LukLinks</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 60%;
-            border-collapse: collapse;
-            margin: auto;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #333;
-        }
-
-        button {
-            padding: 8px 15px;
-            background-color: red;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #ff4d4d;
-        }
-
-        #menu {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #222;
-            padding: 20px;
-            border: 1px solid #555;
-            border-radius: 10px;
-            display: none;
-            z-index: 1000;
-            text-align: center;
-        }
-
-        #menu button {
-            margin: 10px 0;
-            width: 100%;
-        }
-
-        #overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            z-index: 999;
-        }
-    </style>
-    <script>
-        function mostrarMenu(contentId) {
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('menu').style.display = 'block';
-            const copiarBoton = document.getElementById('copiar-enlace');
-            copiarBoton.setAttribute('data-content-id', contentId);
-        }
-
-        function ocultarMenu() {
-            document.getElementById('overlay').style.display = 'none';
-            document.getElementById('menu').style.display = 'none';
-        }
-
-        function copiarAlPortapapeles(button) {
-            const contentId = button.getAttribute('data-content-id');
-            navigator.clipboard.writeText(contentId).then(() => {
-                alert('Enlace copiado al portapapeles: ' + contentId);
-                ocultarMenu();
-            });
-        }
-
-        function abrirAceStream() {
-            alert('Abrir AceStream'); // Aquí puedes implementar lógica específica si es necesario.
-            ocultarMenu();
-        }
-    </script>
+    <link rel="stylesheet" href="all.css"> <!-- Enlace al archivo CSS -->
 </head>
 <body>
-    <div id="overlay" onclick="ocultarMenu()"></div>
-
-    <div id="menu">
-        <button id="copiar-enlace" onclick="copiarAlPortapapeles(this)">Copiar enlace al portapapeles</button>
-        <button onclick="abrirAceStream()">Abrir AceStream</button>
-        <button onclick="ocultarMenu()">Cancelar</button>
-    </div>
-
-    <div>
-        <h1>LukLinks</h1>
-        <table id="tabla-eventos">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Content ID</th>
-                    <th>Acción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>La1</td>
-                    <td><span class="source-0">b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0</span></td>
-                    <td><button onclick="mostrarMenu('b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0')">Iniciar</button></td>
-                </tr>
-                <tr>
-                    <td>La1 UHD</td>
-                    <td><span class="source-0">4a714c436cb67d53cf197f9038239fddab2d8b20</span></td>
-                    <td><button onclick="mostrarMenu('4a714c436cb67d53cf197f9038239fddab2d8b20')">Iniciar</button></td>
-                </tr>
-                <tr>
-                    <td>tdp 1080</td>
-                    <td><span class="source-0">61b9b271c16f970aab43cb753c5f8be181dceece</span></td>
-                    <td><button onclick="mostrarMenu('61b9b271c16f970aab43cb753c5f8be181dceece')">Iniciar</button></td>
-                </tr>
-                <!-- Agrega aquí más filas del mismo modo -->
-            </tbody>
-        </table>
-    </div>
+    <h1>LukLinks</h1>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Content ID</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>La1</td>
+                <td><span class="source-0">b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0</span></td>
+                <td><button class="button" onclick="mostrarMenu('b9a81ddb0cf98d9a5ae18ba2eef0ab094bd5d5b0')">Iniciar</button></td>
+            </tr>
+            <!-- Más filas aquí -->
+        </tbody>
+    </table>
 </body>
 </html>
