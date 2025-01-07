@@ -99,6 +99,10 @@
             display: none;
             z-index: 999;
         }
+        .source-0 {
+            color: red; /* Cambia el color del contenido ID a rojo */
+        }
+
     </style>
     <script>
         function mostrarMenu(contentId) {
@@ -127,7 +131,6 @@
             const contentId = button.getAttribute('data-content-id');
             const acestreamLink = `acestream://${contentId}`;
             navigator.clipboard.writeText(acestreamLink).then(() => {
-                alert('Enlace AceStream copiado al portapapeles: ' + acestreamLink);
                 window.open(acestreamLink, '_blank');
                 ocultarMenu();
             });
@@ -135,7 +138,7 @@
     </script>
 </head>
 <body>
-    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F7F7F7&center=true&vCenter=true&width=435&lines=ACELINKS;by+luk" alt="Typing SVG" /></a>
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=50&duration=2000&pause=1&color=F7F7F7&center=true&vCenter=true&multiline=true&width=435&lines=ACELINKS;by+luk" alt="Typing SVG" /></a>
 
     <div id="overlay" onclick="ocultarMenu()"></div>
 
