@@ -1,0 +1,353 @@
+#EXTM3U url-tvg="https://raw.githubusercontent.com/davidmuma/EPG_dobleM/master/guiafanart_sincolor1.xml.gz, https://raw.githubusercontent.com/Icastresana/lista1/main/epg.xml, https://xmltv.info/de/epg.xml, https://www.open-epg.com/files/unitedstatespremium1.xml, https://iptvx.one/EPG"
+#EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD", M+ LaLiga FHD (SAT) por Tronoss
+acestream://b8370220a0338f9eb4728467111a2bce1033b80b
+#EXTINF:-1 tvg-id="M. LaLiga 1080P por Elcano.top", M. LaLiga 1080P por Elcano.top
+acestream://94d34491106e00394835c8cb68aa94481339b53f
+#EXTINF:-1 tvg-id="M. LaLiga 1080 MultiAudio por Elcano.top", M. LaLiga 1080 MultiAudio por Elcano.top
+acestream://d3de78aebe544611a2347f54d5796bd87f16c92d
+#EXTINF:-1 tvg-id="M. LaLiga 1080 MultiAudio por Elcano.top", M. LaLiga 1080 MultiAudio por Elcano.top
+acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163
+#EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV UHD", M+ LaLiga UHD por Tronoss
+acestream://63b976bbf9bbd0c37117880b8b33702b95357ef3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/yfV1Q8n/liga.png" tvg-id="M+ LaLiga TV HD", M+ LaLiga FHD por Tronoss
+acestream://f5fcacb60627d6319b89942391e441d179dbb9d9
+#EXTINF:-1 tvg-id="M. LaLiga 720 por Elcano.top", M. LaLiga 720 por Elcano.top
+acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e
+#EXTINF:-1 tvg-id="M. LaLiga 2 1080 por Elcano.top", M. LaLiga 2 1080 por Elcano.top
+acestream://83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3
+#EXTINF:-1 tvg-id="M. LaLiga 2 720 por Elcano.top", M. LaLiga 2 720 por Elcano.top
+acestream://f31a586422c9244196c810c84b6c85da350318a5
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Tc97zSb/liga2.png" tvg-id="M+ LaLiga TV 2 HD", M+ LaLiga 2 FHD por Tronoss
+acestream://aeb4beec9a3639f1bed7bd56a20f3afe7186cae3
+#EXTINF:-1 tvg-id="M. LaLiga 3 1080 por Elcano.top", M. LaLiga 3 1080 por Elcano.top
+acestream://ebe14f1edeb49f2253e3b355a8beeadc9b4f0bc4
+#EXTINF:-1 tvg-id="M. LaLiga 3 720 por Elcano.top", M. LaLiga 3 720 por Elcano.top
+acestream://835639b89db00cc0d94660da3c10b6e38bfbcdc1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BZF0xG9/liga3.png" tvg-id="M+ LaLiga TV 3 HD", M+ LaLiga 3 FHD por Tronoss
+acestream://bfa4d2ce53fd25488828a3a1070cd7d194b265af
+#EXTINF:-1 tvg-id="M. LaLiga 4 1080 por Elcano.top", M. LaLiga 4 1080 por Elcano.top
+acestream://68697ea4f261289d97bbc3418ad3cbc4180aa32f
+#EXTINF:-1 tvg-id="DAZN LaLiga 1080 MultiAudio por Elcano.top", DAZN LaLiga 1080 MultiAudio por Elcano.top
+acestream://110d441ddc9713a7452588770d2bc85504672f47
+#EXTINF:-1 tvg-id="DAZN LaLiga 1080 MultiAudio por Elcano.top", DAZN LaLiga 1080 MultiAudio por Elcano.top
+acestream://ec29289b0b14756e686c03a501bae1efa05be70c
+#EXTINF:-1 tvg-id="DAZN LaLiga 1080 MultiAudio por Elcano.top", DAZN LaLiga 1080 MultiAudio por Elcano.top
+acestream://6de4794cd02f88f14354b5996823413a59a1de0f
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD", DAZN LA LIGA FHD (SAT) por Tronoss
+acestream://28c8115681bf6e4565cb5e987530c2f606cc561f
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-es.png" tvg-id="DAZN LaLiga HD", DAZN LIGA FHD por Tronoss
+acestream://dad36d37fa74b94e345bb014d82d820e54fb69d8
+#EXTINF:-1 tvg-id="DAZN LaLiga 720 por Elcano.top", DAZN LaLiga 720 por Elcano.top
+acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb
+#EXTINF:-1 tvg-id="DAZN LaLiga 2 1080 MultiAudio por Elcano.top", DAZN LaLiga 2 1080 MultiAudio por Elcano.top
+acestream://97ba38d47680954be40e48bd8f43e17222fefecb
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/spain/dazn-laliga-2-es.png" tvg-id="DAZN LaLiga 2 HD", DAZN LA LIGA 2 FHD por Tronoss
+acestream://c79b272e20f31d1be9103f582e87209a06a63927
+#EXTINF:-1 tvg-id="DAZN LaLiga 2 720 MultiAudio por Elcano.top", DAZN LaLiga 2 720 MultiAudio por Elcano.top
+acestream://51dbbfb42f8091e4ea7a2186b566a40e780953d9
+#EXTINF:-1 tvg-id="La Liga BAR 1080 por Elcano.top", La Liga BAR 1080 por Elcano.top
+acestream://608b0faf7d3d25f6fe5dba13d5e4b4142949990e
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%201%20BAR.png" tvg-id="DAZN 1 HD", DAZN 1 BAR FHD por Tronoss
+acestream://0908f5dd264ded10b638636cb7479409cfee0813
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/DAZN%202%20BAR.png" tvg-id="DAZN 2 HD", DAZN 2 BAR FHD por Tronoss
+acestream://17dc260a6b6c176183807e659817b647ddca465b
+#EXTINF:-1 tvg-id="M.L. Campeones 1080 MultiAudio por Elcano.top", M.L. Campeones 1080 MultiAudio por Elcano.top
+acestream://0a26e20f39845e928411e09a124374fccb6e1478
+#EXTINF:-1 tvg-id="M.L. Campeones 1080 MultiAudio por Elcano.top", M.L. Campeones 1080 MultiAudio por Elcano.top
+acestream://775abd8697715c48a357906d40734ccd2a10513c
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD", M+ LIGA DE CAMPEONES UHD por Tronoss
+acestream://be5cf4441685df4540a34938fb3774818fa62310
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD", M+ LIGA DE CAMPEONES FHD por Tronoss
+acestream://4e3302991c482dff2e10de69795fa5aa87a61ae7
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones.png" tvg-id="M+ Liga de Campeones HD", M+ LIGA DE CAMPEONES FHD (SAT) por Tronoss
+acestream://38d0b187d3cf396695bbb2166a09f57736276e2e
+#EXTINF:-1 tvg-id="M.L. Campeones 720 por Elcano.top", M.L. Campeones 720 por Elcano.top
+acestream://8edb264520569b2280c5e86b2dc734e120032903
+#EXTINF:-1 tvg-id="M.L. Campeones 2 1080 por Elcano.top", M.L. Campeones 2 1080 por Elcano.top
+acestream://c070cdb701fc46bb79d17568d99fc64620443d63
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD", M+ LIGA DE CAMPEONES 2 FHD por Tronoss
+acestream://061bda6fe2e50c509afd83f63a601e139d75d3a0
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%202.png" tvg-id="M+ Liga de Campeones 2 HD", M+ LIGA DE CAMPEONES 2 UHD por Tronoss
+acestream://8e4ab34c7fe491831734bc677b7bf91555653eb3
+#EXTINF:-1 tvg-id="M.L. Campeones 2 720 por Elcano.top", M.L. Campeones 2 720 por Elcano.top
+acestream://abdf9058786a48623d0de51a3adb414ae10b6e72
+#EXTINF:-1 tvg-id="M.L. Campeones 3 1080 por Elcano.top", M.L. Campeones 3 1080 por Elcano.top
+acestream://3618edda333dad5374ac2c801f5f14483934b97d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%203.png" tvg-id="M+ Liga de Campeones 3 HD", M+ LIGA DE CAMPEONES 3 FHD por Tronoss
+acestream://e42984ac6529407462f92201af95c01db8988368
+#EXTINF:-1 tvg-id="M.L. Campeones 3 720 por Elcano.top", M.L. Campeones 3 720 por Elcano.top
+acestream://0b348cc1ae499e810729661878764a0fab88ab69
+#EXTINF:-1 tvg-id="M.L. Campeones 4 1080 por Elcano.top", M.L. Campeones 4 1080 por Elcano.top
+acestream://65a18a6bd83918a9586b673fec12405aaf4e9f7d
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%204.png" tvg-id="M+ Liga de Campeones 4", M+ LIGA DE CAMPEONES 4 FHD por Tronoss
+acestream://01152274037c5f7155489e0a977cbde71a61290c
+#EXTINF:-1 tvg-id="M.L. Campeones 5 1080 por Elcano.top", M.L. Campeones 5 1080 por Elcano.top
+acestream://11744c25a594e17d587ed0871fe40ff21b4bd1e0
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%205.png" tvg-id="M+ Liga de Campeones 5", M+ LIGA DE CAMPEONES 5 FHD por Tronoss
+acestream://cc910aee690f70190b04920d61e39da5a6d0a057
+#EXTINF:-1 tvg-id="M.L. Campeones 6 1080 por Elcano.top", M.L. Campeones 6 1080 por Elcano.top
+acestream://fdda1f0dd8c33fbdc5a66ab98e291f570cae67cd
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%206.png" tvg-id="M+ Liga de Campeones 6", M+ LIGA DE CAMPEONES 6 FHD por Tronoss
+acestream://a5fab130ebf491c04d8c0dcd2adce9babcd39e69
+#EXTINF:-1 tvg-id="M.L. Campeones 7 1080 por Elcano.top", M.L. Campeones 7 1080 por Elcano.top
+acestream://b7f47db93dced60f54e8f89e2366ed061b534049
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%207.png" tvg-id="M+ Liga de Campeones 7", M+ LIGA DE CAMPEONES 7 FHD por Tronoss
+acestream://1987ec4c561f7e47a1d02a8de1665f71934406b3
+#EXTINF:-1 tvg-id="M.L. Campeones 8 1080 por Elcano.top", M.L. Campeones 8 1080 por Elcano.top
+acestream://d298c6e5c8be71f5995b45289c6388b225318b3c
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%208.png" tvg-id="M+ Liga de Campeones 8", M+ LIGA DE CAMPEONES 8 FHD por Tronoss
+acestream://834ffb208d132aeb78c4b13209af71be7ec578c6
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%209.png" tvg-id="M+ Liga de Campeones 9", M+ LIGA DE CAMPEONES 9 FHD por Tronoss
+acestream://6d69b67507dda888dadb5ea9df951249b73ca00c
+#EXTINF:-1 tvg-id="M.L. Campeones 9 SD por Elcano.top", M.L. Campeones 9 SD por Elcano.top
+acestream://2d7c4cfb3987b652a779afc894cca2fccbbacf21
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2010.png" tvg-id="M+ Liga de Campeones 10", M+ LIGA DE CAMPEONES 10 FHD por Tronoss
+acestream://64954ce664a3f68e271aee5f83094a19fac4416b
+#EXTINF:-1 tvg-id="M.L. Campeones 10 SD por Elcano.top", M.L. Campeones 10 SD por Elcano.top
+acestream://c056f9e180cd7d40963129a17ff54f4ee8259353
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2011.png" tvg-id="M+ Liga de Campeones 11", M+ LIGA DE CAMPEONES 11 FHD por Tronoss
+acestream://bb5e72b45383cb4d02e6f414f9119bb5d6386b9e
+#EXTINF:-1 tvg-id="M.L. Campeones 11 SD por Elcano.top", M.L. Campeones 11 SD por Elcano.top
+acestream://a12a16f74cf12799d4475ae867dc61eb60e1ba2e
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2012.png" tvg-id="M+ Liga de Campeones 12", M+ LIGA DE CAMPEONES 12 FHD por Tronoss
+acestream://6739e6aa99e81f0ed1cecb88c5f1ab1dd9dd3fa8
+#EXTINF:-1 tvg-id="M.L. Campeones 12 SD por Elcano.top", M.L. Campeones 12 SD por Elcano.top
+acestream://df7d145fcaf0566db4098d2f10236185d92bc9fd
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2013.png" tvg-id="M+ Liga de Campeones 13", M+ LIGA DE CAMPEONES 13 FHD por Tronoss
+acestream://30449c4944faf74a675392b292661dc4988e7798
+#EXTINF:-1 tvg-id="M.L. Campeones 13 SD por Elcano.top", M.L. Campeones 13 SD por Elcano.top
+acestream://bdfe9ebe62d690c1b13eef4346d72e618cfbe804
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2014.png" tvg-id="M+ Liga de Campeones 14", M+ LIGA DE CAMPEONES 14 SD por Tronoss
+acestream://b149283faf12a9e574380c7ad1eb227261eaca85
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2015.png" tvg-id="M+ Liga de Campeones 15", M+ LIGA DE CAMPEONES 15 SD por Tronoss
+acestream://bb8506403e19f80ab66e431f2a4c74089a909d06
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2016.png" tvg-id="M+ Liga de Campeones 16", M+ LIGA DE CAMPEONES 16 SD por Tronoss
+acestream://5a412fd44a1f46f3446988ddeed658d861dd6b70
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/davidmuma/picons_dobleM/master/icon/M%2B%20Liga%20de%20Campeones%2017.png" tvg-id="M+ Liga de Campeones 17", M+ LIGA DE CAMPEONES 17 SD por Tronoss
+acestream://be4381d1d5203fc0c4879a097277bd7683235650
+#EXTINF:-1 tvg-id="M.Plus 1080 por Elcano.top", M.Plus 1080 por Elcano.top
+acestream://56ac8e227d526e722624675ccdd91b0cc850582f
+#EXTINF:-1 tvg-logo="https://i.ibb.co/hFYPWbpJ/plus.png" tvg-id="Movistar Plus+ HD", M+ PLUS FHD por Tronoss
+acestream://682579275d24fa95964f99f3778bdd22c211c6b9
+#EXTINF:-1 tvg-logo="https://i.ibb.co/gL8rx1B7/plus2.png" tvg-id="Movistar Plus+ 2 HD", M+ PLUS 2 FHD por Tronoss
+acestream://70c25bf1843b81356d62ebffbba267be60066659
+#EXTINF:-1 tvg-id="LaLiga Hypermotion 1080 por Elcano.top", LaLiga Hypermotion 1080 por Elcano.top
+acestream://b2706a7ffbea236a3b398139a3a606ada664c0eb
+#EXTINF:-1 tvg-logo="https://i.ibb.co/CBdGc9f/hypermotion1.png" tvg-id="LaLiga TV Hypermotion HD", LALIGA HYPERMOTION TV FHD de Tronoss
+acestream://c0f89f060d5134c855b6e3cc707c42ed0bf92498
+#EXTINF:-1 tvg-id="LaLiga Hypermotion 720 por Elcano.top", LaLiga Hypermotion 720 por Elcano.top
+acestream://121f719ebb94193c6086ef92865cf9b197750980
+#EXTINF:-1 tvg-id="LaLiga Hypermotion 2 1080 por Elcano.top", LaLiga Hypermotion 2 1080 por Elcano.top
+acestream://0cfdfde1b70623b8c210b0f7301be2a87456481d
+#EXTINF:-1 tvg-logo="https://i.ibb.co/8K0VrQV/hypermotion2.png" tvg-id="LaLiga TV Hypermotion 2", LALIGA HYPERMOTION TV2 HD de Tronoss
+acestream://7f7eaa56f11249f7b92b6287c4cd5d58dc77a61a
+#EXTINF:-1 tvg-id="LaLiga Hypermotion 2 720 por Elcano.top", LaLiga Hypermotion 2 720 por Elcano.top
+acestream://0a335406bad0b658aeddb2d38f8c0614b2e5623a
+#EXTINF:-1 tvg-id="LaLiga Hypermotion 3 por Elcano.top", LaLiga Hypermotion 3 por Elcano.top
+acestream://fefd45ed6ff415e05f1341b7d9da2988eacd13ea
+#EXTINF:-1 tvg-logo="https://i.ibb.co/826y2Yv/Hypermotion3.png" tvg-id="LaLiga TV Hypermotion 3", LALIGA HYPERMOTION TV 3 FHD de Tronoss
+acestream://f93741dc38bac456018fe9906a4689c2c6405716
+#EXTINF:-1 tvg-logo="https://i.ibb.co/KqGDjxS/hypermotion4.png" tvg-id="LaLiga TV Hypermotion 4", LALIGA HYPERMOTION TV4 FHD de Tronoss
+acestream://9bbbaec25775a0c47b07ceb547fe5e017c169729
+#EXTINF:-1 tvg-logo="https://i.ibb.co/XjgsTwd/hypermotion5.png" tvg-id="LaLiga TV Hypermotion 5", LALIGA HYPERMOTION TV5 FHD de Tronoss
+acestream://8656b8874dbb8f52911ca0ad6e1e3d177526508f
+#EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey", M+ Super Copa (SAT) por Tronoss
+acestream://894afd347da576af7bbfc0b986485581b8df151b
+#EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey", M+ SuperCopa del Rey FHD por Tronoss
+acestream://d282167ec84abdb4f5ed4c4856ea4284ac00991f
+#EXTINF:-1 tvg-id="Copa 1080 por Elcano.top", Copa 1080 por Elcano.top
+acestream://f6beccbc4eea4bc0cda43b3e8ac14790a98b61b4
+#EXTINF:-1 tvg-logo="https://i.ibb.co/m54QH9Gt/copa.png" tvg-id="M+ Copa del Rey", M+ Super Copa por Tronoss
+acestream://6118cada4cbe7650eeb21d170e184c26a4cdc808
+#EXTINF:-1 tvg-id="Copa 720 por Elcano.top", Copa 720 por Elcano.top
+acestream://b51f2d9a15b6956a44385b6be531bcabeb099d9d
+#EXTINF:-1 tvg-id="M. Deportes 1080 por Elcano.top", M. Deportes 1080 por Elcano.top
+acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895
+#EXTINF:-1 tvg-logo="https://i.ibb.co/CV4CLjz/deportes.png" tvg-id="M+ Deportes HD", M+ DEPORTES FHD por Tronoss
+acestream://ce65932b1113ec32c270050786d7702897150d74
+#EXTINF:-1 tvg-id="M. Deportes 720 por Elcano.top", M. Deportes 720 por Elcano.top
+acestream://3a74d9869b13e763476800740c6625e715a39879
+#EXTINF:-1 tvg-id="M. Deportes 2 1080 por Elcano.top", M. Deportes 2 1080 por Elcano.top
+acestream://639c561dd57fa3fc91fde715caeb696c5efb7ce7
+#EXTINF:-1 tvg-logo="https://i.ibb.co/q95fBKV/deportes2.png" tvg-id="M+ Deportes 2 HD", M+ DEPORTES 2 FHD por Tronoss
+acestream://43931a2672086891ce4f6d6b4128e005e8038959
+#EXTINF:-1 tvg-id="M. Deportes 3 1080 por Elcano.top", M. Deportes 3 1080 por Elcano.top
+acestream://571bff4d12b1791eb99dbf20bec38e630693a6a3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/jDg5qWD/deportes3.png" tvg-id="M+ Deportes 3", M+ DEPORTES 3 FHD  por Tronoss
+acestream://fb27c753c690bf21edcf527f42cd14c5c9e6b53e
+#EXTINF:-1 tvg-id="M. Deportes 4 1080 por Elcano.top", M. Deportes 4 1080 por Elcano.top
+acestream://b4d1308a61e4caf8c06ac3d6ce89d165c015c2fb
+#EXTINF:-1 tvg-logo="https://i.ibb.co/WDN9NN9/deportes4.png" tvg-id="M+ Deportes 4", M+ DEPORTES 4 FHD por Tronoss
+acestream://f36a4e0ef1fbd63757130284e9a6c3b7c212a421
+#EXTINF:-1 tvg-id="M. Deportes 5 1080 por Elcano.top", M. Deportes 5 1080 por Elcano.top
+acestream://fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac
+#EXTINF:-1 tvg-logo="https://i.ibb.co/pvZ2tSB/deportes5.png" tvg-id="M+ Deportes 5", M+ DEPORTES 5 HD por Tronoss
+acestream://34b38986ac5e6e842f954f0dd25b2798be70b276
+#EXTINF:-1 tvg-id="M. Deportes 6 1080 por Elcano.top", M. Deportes 6 1080 por Elcano.top
+acestream://cc5782d37ae6b6e0bab396dd64074982d0879046
+#EXTINF:-1 tvg-id="M. Deportes 7 1080 por Elcano.top", M. Deportes 7 1080 por Elcano.top
+acestream://070f82d6443a52962d6a2ed9954c979b29404932
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD", DAZN 1 FHD (SAT) por Tronoss
+acestream://e253307f495a6beeda976d2363d72501f2dc1fe3
+#EXTINF:-1 tvg-id="DAZN 1 1080 por Elcano.top", DAZN 1 1080 por Elcano.top
+acestream://7cf0086fa7d478f51dbba952865c79e66cb9add5
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN 1 HD", DAZN 1 FHD por Tronoss
+acestream://e6121426f7d8007ae9de8e782f05d91e9b27993d
+#EXTINF:-1 tvg-id="DAZN 1 720 por Elcano.top", DAZN 1 720 por Elcano.top
+acestream://35c7f0c966ecde3390f4510bb4caded40018c07a
+#EXTINF:-1 tvg-id="DAZN 2 1080 por Elcano.top", DAZN 2 1080 por Elcano.top
+acestream://ca923c9873fd206a41c1e83ff8fc40e3cf323c9a
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="DAZN 2 HD", DAZN 2 FHD por Tronoss
+acestream://b056dfc53c18de02caeff4435ddb6b36bfb7b031
+#EXTINF:-1 tvg-id="DAZN 2 720 por Elcano.top", DAZN 2 720 por Elcano.top
+acestream://a929eeec1268d69d1556a2e3ace793b2577d8810
+#EXTINF:-1 tvg-id="DAZN 3 1080 por Elcano.top", DAZN 3 1080 por Elcano.top
+acestream://19cd05c7ae26f22737ae5728b571ca36abd8a2e8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="DAZN 3 HD", DAZN 3 FHD por Tronoss
+acestream://b11dd020fc6e89b39b69c1f3bef032be72286e72
+#EXTINF:-1 tvg-id="DAZN 4 1080 por Elcano.top", DAZN 4 1080 por Elcano.top
+acestream://4e83f23945ab3e43982045f88ec31daaa4683102
+#EXTINF:-1 tvg-logo="https://i.ibb.co/R4LBVWP/dazn4.png" tvg-id="DAZN 4 HD", DAZN 4 FHD por Tronoss
+acestream://ddb1d0ff24955582668c0c6e4d4fb3d58cc4b65e
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/2._Bundesliga_logo.svg/170px-2._Bundesliga_logo.svg.png" tvg-id="", DAZN BUNDESLIGA 1 FHD por Tronoss  
+acestream://4fa5fb9ab4a3213f7ffe2dfa2ca2d3740f8fd61d
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/180px-Bundesliga_logo_%282017%29.svg.png" tvg-id="", DAZN BUNDESLIGA 2 FHD por Tronoss
+acestream://f67f95bcb185c3d62d532425709908be86bd442c
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/3._Liga_logo_%282019%29.svg/200px-3._Liga_logo_%282019%29.svg.png" tvg-id="", DAZN BUNDESLIGA 3 FHD por Tronoss
+acestream://2c3e87e1aed5285c9a06d74cd29132c0f7520c09
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="", DAZN EVENTOS 1 por Tronoss
+acestream://413ee8ca35110147e6644e7c3eed37eff46ba222
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Kz0GXSX/dazn2.png" tvg-id="", DAZN EVENTOS 2 por Tronoss
+acestream://e58b91034d2b9521de2ad91077f8dc565dcdb97b
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2vkThM3/dazn3.png" tvg-id="", DAZN EVENTOS 3 por Tronoss
+acestream://ea00d98ceb524da4ef7f2f0733661dbb31e48f7b
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="DAZN F1 HD", DAZN F1 FHD (SAT) por Tronoss
+acestream://37875b8c4e71b3daca16e03070968e0f6344ba4c
+#EXTINF:-1 tvg-id="DAZN F1 1080 (Fórmula 1) por Elcano.top", DAZN F1 1080 (Fórmula 1) por Elcano.top
+acestream://d6281d4e6310269b416180442a470d23a4a99dc9
+#EXTINF:-1 tvg-id="DAZN F1 1080 (Fórmula 1) por Elcano.top", DAZN F1 1080 (Fórmula 1) por Elcano.top
+acestream://2c6e4c897661e6b0257bfe931b66d20b2ec763b6
+#EXTINF:-1 tvg-id="DAZN F1 1080 (Fórmula 1) por Elcano.top", DAZN F1 1080 (Fórmula 1) por Elcano.top
+acestream://71eef80158aa8b37f3dc59f6793c6696df9a2dfa
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FVzKq1y/dazn1.png" tvg-id="DAZN F1 HD", DAZN F1 FHD por Tronoss
+acestream://e41352c657506cfe6eecc4f17982f69275f1660b
+#EXTINF:-1 tvg-id="DAZN F1 720 (Fórmula 1) por Elcano.top", DAZN F1 720 (Fórmula 1) por Elcano.top
+acestream://268289e7a3c5209960b53b4d43c8c65fab294b85
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="", F1 TV 14 | Fernando Alonso | Aston Martin por Tronoss
+acestream://e25d7b28f6858aeda8fdc5928f186ab11f1d6b0c
+#EXTINF:-1 tvg-logo="https://i.ibb.co/2Ndmtbp/f1.png" tvg-id="", F1 TV 55 | Carlos Sainz | Williams por Tronoss
+acestream://acf763bf9127ad753fa61227a3565e6557467354
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_mxgp.png" tvg-id="", MGPTV | Camara de a bordo 1 por Tronoss
+acestream://a5cf46320fe405803a6304c2ea764313351b0158
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_mxgp.png" tvg-id="", MGPTV | Camara de a bordo 2 por Tronoss
+acestream://2adc28203c35993aa9bccd2e1e5b0015ec0c878b
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_mxgp.png" tvg-id="", MGPTV | Camara de a bordo 3 por Tronoss
+acestream://7a8c76faf27e39efd0535de43fb11d18e1ef043b
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_mxgp.png" tvg-id="", MGPTV | Camara de a bordo 4 por Tronoss
+acestream://a98becd43a2e6ec6a643cb12851d31203756bba5
+#EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD", #VAMOS FHD (SAT) por Tronoss
+acestream://8c1e181e99425c729cdf12c21fccaf07ea106a49
+#EXTINF:-1 tvg-id="#Vamos 1080 por Elcano.top", #Vamos 1080 por Elcano.top
+acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2
+#EXTINF:-1 tvg-logo="https://i.ibb.co/gWMRpFB/vamos.png" tvg-id="M+ Vamos HD", #VAMOS FHD por Tronoss
+acestream://7ea69506cdde10da9d85a2414310a7e5afcdba19
+#EXTINF:-1 tvg-id="#Vamos 720 por Elcano.top", #Vamos 720 por Elcano.top
+acestream://12ba546d229bc39f01c3c18988a034b215fe6adb
+#EXTINF:-1 tvg-logo="https://i.ibb.co/m9zPrNc/Euro4k.png" tvg-id="Eurosport 4K", EUROSPORT UHD por Tronoss
+acestream://4b26063cd70fc709d63e0410d7603c515da5baf7
+#EXTINF:-1 tvg-id="EuroSport 1 1080 por Elcano.top", EuroSport 1 1080 por Elcano.top
+acestream://16ffa1713f42aa27317ee039a2bd0cdbc89a1580
+#EXTINF:-1 tvg-logo="https://i.ibb.co/r2Yd7xD/euro1.png" tvg-id="Eurosport 1 HD", EUROSPORT 1 FHD por Tronoss
+acestream://b16eeeb12d208029eff3dcc9e73613fd8b052737
+#EXTINF:-1 tvg-id="EuroSport 2 1080 por Elcano.top", EuroSport 2 1080 por Elcano.top
+acestream://98784fa0714190de289f42eb5b84e405df7e685a
+#EXTINF:-1 tvg-logo="https://i.ibb.co/M6h4Qyd/euro2.png" tvg-id="Eurosport 2", EUROSPORT 2 FHD por Tronoss
+acestream://dfdf5353080a7e3d0f4b4c8e3cf4e0be19731652
+#EXTINF:-1 tvg-id="NBA TV por Elcano.top", NBA TV por Elcano.top
+acestream://e72d03fb9694164317260f684470be9ab781ed95
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JWPVhS0d/nba.png" tvg-id="", NBA TV por Tronoss
+acestream://7146e467aee3cb0bcdc286b39a3022c992428f01
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JWPVhS0d/nba.png" tvg-id="", NBA NETWORK por Tronoss
+acestream://8aa5c652b7e8e94c45e37eb5b60aef9dcd37839e
+#EXTINF:-1 tvg-logo="https://i.ibb.co/CsMjBRkR/ufc.png" tvg-id="", UFC Fight Pass por Tronoss
+acestream://e3ad553098e0c1e70cba1ea2a906dc27aa3452a2
+#EXTINF:-1 tvg-id="M. Golf 1080 por Elcano.top", M. Golf 1080 por Elcano.top
+acestream://f41f1096862767289620be5bd85727f946a434db
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Vp04N3pT/golf.png" tvg-id="M+ Golf HD", MOVISTAR GOLF FHD por Tronoss
+acestream://e2a05b5dad62f8dd20822c08fc9fd5dc2245c512
+#EXTINF:-1 tvg-id="M. Golf2 1080 por Elcano.top", M. Golf2 1080 por Elcano.top
+acestream://e258e75e0e802afa5fcc53d46b47d8801a254ad5
+#EXTINF:-1 tvg-logo="https://i.ibb.co/BHXHhN2b/M-Golf-2.png" tvg-id="M+ Golf 2 HD", MOVISTAR GOLF 2 FHD por Tronoss
+acestream://11078aceacd1be758f4c953a437fc1ecb8eca730
+#EXTINF:-1 tvg-id="La1 UHD por Elcano.top", La1 UHD por Elcano.top
+acestream://4a714c436cb67d53cf197f9038239fddab2d8b20
+#EXTINF:-1 tvg-logo="https://i.ibb.co/Vf2GT70/la1.png" tvg-id="La 1 HD", LA 1 FHD por Tronoss
+acestream://71abebf150324106df1d9dc25e34dd8840217835
+#EXTINF:-1 tvg-logo="https://i.ibb.co/YFzzqWw5/la2.png" tvg-id="La 2", LA 2 FHD por Tronoss
+acestream://d27e23deffb2314a9549b00d62fade1e2e38ed60
+#EXTINF:-1 tvg-logo="https://i.ibb.co/qFgSG92W/antena3.png" tvg-id="Antena 3 HD", ANTENA 3 FHD por Tronoss
+acestream://a6cfb25becd96cbe9d1929e0e560016beac40887
+#EXTINF:-1 tvg-logo="https://i.ibb.co/C3yh66tp/cuatro.png" tvg-id="Cuatro HD", CUATRO FHD por Tronoss
+acestream://de6527833ce8e62aa0af3e64891e6e1f250726e0
+#EXTINF:-1 tvg-id="Telecinco 1080 por Elcano.top", Telecinco 1080 por Elcano.top
+acestream://66a7e4727bccce8ccc04e54861b06b62d89452fa
+#EXTINF:-1 tvg-id="Telecinco 1080 por Elcano.top", Telecinco 1080 por Elcano.top
+acestream://47e6dd48dd7c9705d07b13139b80e44683fd5eb1
+#EXTINF:-1 tvg-logo="https://i.ibb.co/81wJ3GH/telecinco.png" tvg-id="Telecinco HD", TELECINCO FHD por Tronoss
+acestream://e53c497c3a56968bc11fa3771c813fc740e355e3
+#EXTINF:-1 tvg-logo="https://i.ibb.co/SX1jhBzy/lasexta.png" tvg-id="La Sexta HD", LA SEXTA FHD por Tronoss
+acestream://906191eed84a42d83939fd150ee3c04834bc0533
+#EXTINF:-1 tvg-id="tdp 1080 por Elcano.top", tdp 1080 por Elcano.top
+acestream://61b9b271c16f970aab43cb753c5f8be181dceece
+#EXTINF:-1 tvg-logo="https://i.ibb.co/fb9dbDW/tdp.png" tvg-id="Teledeporte", Teledeporte FHD por Tronoss
+acestream://2c5a883ed564be5ff3692705c25556613c395b11
+#EXTINF:-1 tvg-logo="https://assets.laliga.com/assets/2023/07/13/medium/60e1502d7d6098162828bb002e98bdb4.png" tvg-id="GOL PLAY", Gol Play FHD por Tronoss
+acestream://f5be5fe6063db01a7587c37acf57fcadabea560a
+#EXTINF:-1 tvg-id="#Ellas 1080 por Elcano.top", #Ellas 1080 por Elcano.top
+acestream://d8c2ed470e847154a88f011137cc206319f6bed5
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rx9hnHz/ellas.png" tvg-id="M+ Ellas Vamos HD", #VAMOS ELLAS  FHD por Tronoss
+acestream://f317a4fef0b96caabaaad25cadb5f45303544767
+#EXTINF:-1 tvg-logo="https://i.ibb.co/rGVmRcSH/hits.png" tvg-id="M+ Hits HD", MOVISTAR SERIES FHD por Tronoss
+acestream://14767834db41c572ab83b80f7eadc3ba78a2ced0
+#EXTINF:-1 tvg-logo="https://i.ibb.co/JWpf4FcM/clasicos.png" tvg-id="M+ Clásicos HD", MOVISTAR CLASICOS FHD por Tronoss
+acestream://26c63851b7a0de9efed907571b19d342fc8d6765
+#EXTINF:-1 tvg-logo="https://i.ibb.co/FLSGTSc4/accion.png" tvg-id="M+ Acción HD", M+ ACCION FHD por Tronoss
+acestream://2d904318a20e89de0f6540f3e8c210e1376d5e51
+#EXTINF:-1 tvg-id="PPVP 1 por Elcano.top", PPVP 1 por Elcano.top
+acestream://6994af284ecab2996f9b140ef44b8da8bfee0006
+#EXTINF:-1 tvg-id="PPVP 2 por Elcano.top", PPVP 2 por Elcano.top
+acestream://7cf437be950f3525e735be57c63f7824cab822c9
+#EXTINF:-1 tvg-id="PPVP 3 por Elcano.top", PPVP 3 por Elcano.top
+acestream://ad6f4e8e329d6a97c7e7d7b0b8e5d04d8dd0bb48
+#EXTINF:-1 tvg-id="Sport TV-1 1080p por Elcano.top", Sport TV-1 1080p por Elcano.top
+acestream://ce235921dac95e1da2dd5e54673c2fecb9e806de
+#EXTINF:-1 tvg-id="ESPN USA por Elcano.top", ESPN USA por Elcano.top
+acestream://4b4907de51ec11087d4bed5876f2a0c68264f442
+#EXTINF:-1 tvg-id="ESPN2 USA por Elcano.top", ESPN2 USA por Elcano.top
+acestream://664eb5fe460b96941aed633959a845b185cd8394
+#EXTINF:-1 tvg-id="Fox Sports 1 USA por Elcano.top", Fox Sports 1 USA por Elcano.top
+acestream://c9c062941fbecb16ce29437f346ea7177d720898
+#EXTINF:-1 tvg-id="Fox Sports 2 USA por Elcano.top", Fox Sports 2 USA por Elcano.top
+acestream://cba8d369eac629b577750edb90370cd1c5fb03b7
+#EXTINF:-1 tvg-id="Sky Sports Arena UK por Elcano.top", Sky Sports Arena UK por Elcano.top
+acestream://d317a003e8047da2c36a2a2bb2289578c9a3b79c
+#EXTINF:-1 tvg-id="Sky Sports Football UK por Elcano.top", Sky Sports Football UK por Elcano.top
+acestream://8dbe2d515e9131fa311353537736f8c94be9b26d
+#EXTINF:-1 tvg-id="Sky Sports Main Event UK por Elcano.top", Sky Sports Main Event UK por Elcano.top
+acestream://eab7aeef0218ce8b0752e596e4792b69eda4df5e
+#EXTINF:-1 tvg-id="Sky Sports Plus UK por Elcano.top", Sky Sports Plus UK por Elcano.top
+acestream://ec5eabe0144ccfffc337e1d6708e2afb81d0638e
+#EXTINF:-1 tvg-id="Premier Sports 1 UK por Elcano.top", Premier Sports 1 UK por Elcano.top
+acestream://75a56863b6fe0407ad4305b4d7ee5643c3923565
+#EXTINF:-1 tvg-id="Premier Sports 2 UK por Elcano.top", Premier Sports 2 UK por Elcano.top
+acestream://4903ca695edb64bc72ae29eb85a5333ba0139537
+#EXTINF:-1 tvg-id="Eleven Sports 1 por Elcano.top", Eleven Sports 1 por Elcano.top
+acestream://36cad67fed5a739757a9db844a551aa845a8d51b
+#EXTINF:-1 tvg-id="Eleven Sports 2 por Elcano.top", Eleven Sports 2 por Elcano.top
+acestream://d08013df6e437a1fdf1e0c34f573fdf6a40c7fce
+#EXTINF:-1 tvg-id="Eleven Sports 3 por Elcano.top", Eleven Sports 3 por Elcano.top
+acestream://dae7d1251f069516cc0a9c8f15f6639d2a17df1e
+#EXTINF:-1 tvg-id="Eleven Sports 4 por Elcano.top", Eleven Sports 4 por Elcano.top
+acestream://0f32c0131a2d9444996410801f4e18b04384db98
+#EXTINF:-1 tvg-id="Eleven Sports 5 por Elcano.top", Eleven Sports 5 por Elcano.top
+acestream://4dbe63b44fc4f439f5b634c0d2aa7e0cccad808a
