@@ -195,8 +195,8 @@
         function mostrarMenu(contentId) {
         document.getElementById('overlay').style.display = 'block';
         document.getElementById('menu').style.display = 'block';
-        //const copiarBoton = document.getElementById('copiar-enlace');
-        //copiarBoton.setAttribute('data-content-id', contentId);
+        const copiarBoton = document.getElementById('copiar-enlace');
+        copiarBoton.setAttribute('data-content-id', contentId);
         const acestreamBoton = document.getElementById('acestream');
         acestreamBoton.setAttribute('data-content-id', contentId);
         }
@@ -206,13 +206,13 @@
             document.getElementById('menu').style.display = 'none';
         }
 
-        /* function copiarAlPortapapeles(button) {
+        function copiarAlPortapapeles(button) {
             const contentId = button.getAttribute('data-content-id');
             navigator.clipboard.writeText(contentId).then(() => {
                 alert('Enlace copiado al portapapeles: ' + contentId);
                 ocultarMenu();
             });
-        } */
+        }
 
         function abrirAceStream(button) {
             const contentId = button.getAttribute('data-content-id');
@@ -223,12 +223,12 @@
             });
         }
 
-        /* function volverArriba() {
+        function volverArriba() {
             ocultarMenu();
             window.scrollTo(0, 0);
-        } */
+        }
 
-        /* document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
         let filas = document.querySelectorAll("#tabla-eventos tbody tr");
         filas.forEach((fila, index) => {
             let primeraCelda = fila.querySelector("td");
@@ -236,11 +236,11 @@
                 primeraCelda.innerHTML = (index + 1) + ". " + primeraCelda.innerHTML;
             }
         });
-        }); */
+        });
 
-        /* window.onload = function() {
+        window.onload = function() {
             window.scrollTo(0, 0);
-        }; */
+        };
 
         function irA(canal) {
             const elementos = {
@@ -281,7 +281,7 @@
 <div id="overlay" onclick="ocultarMenu()"></div>
 
 <div id="menu">
-    <!-- <button id="copiar-enlace" onclick="copiarAlPortapapeles(this)">Copiar enlace al portapapeles</button> -->
+    <button id="copiar-enlace" onclick="copiarAlPortapapeles(this)">Copiar enlace al portapapeles</button>
     <button id="acestream" onclick="abrirAceStream(this)">Abrir AceStream</button>
     <button onclick="volverArriba()">Volver Arriba</button>
     <button onclick="ocultarMenu()">Cancelar</button>
