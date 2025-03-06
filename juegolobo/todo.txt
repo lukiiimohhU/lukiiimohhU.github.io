@@ -1,0 +1,3 @@
+Vale, ahora al reiniciar la partida funciona bien, mete a todos los jugadores a la sala de espera y todo funciona bien, excepto que el botón de Iniciar partida para el host, no funciona y entonces es imposible iniciar la partida.
+
+añadir los demás roles y que se asignen X roles por cada X personas, esta en los prompts de el otro chat de grok.
