@@ -263,12 +263,12 @@ async function getInputValue(){
   }
   else if (value.toLowerCase() === "shorten") {
         trueValue(value);
-        createText("Uso: shorten <slug> <destination>", "error");
+        createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
       } else if (value.toLowerCase().startsWith("shorten ")) {
         trueValue(value);
         const args = value.split(" ").slice(1);
         if (args.length !== 2) {
-          createText("Uso: shorten <slug> <destination>", "error");
+          createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
           return;
         }
         const [slug, destination] = args;
