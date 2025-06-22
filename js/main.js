@@ -257,6 +257,7 @@ async function getInputValue(){
     createCode("whoami", "Who I am and what I do.");
     createCode("social -a", "All my social networks.");
     createCode("projects", "See my projects.");
+    createCode("cd lurlkksss", "Navigate to url.lukksss.es.");
     createCode("clear", "Clean the terminal.");
   }
   else if(value === "dvd" || value === "Dvd"){
@@ -269,26 +270,34 @@ async function getInputValue(){
     createText("lobos-del-chorraero (<span class='green'>MAINTAINED</span>) - WebGame designed and based in the original game \"Los lobos de Castronegro\", perfect to play with friends (4-16). ");
     createText("daypo-extractor (<span class='green'>MAINTAINED</span>) - Python script to extract daypo questions with their respective answer from daypos URLs and directly to local archives. ");
     createText("lukIOs (<span class='blue'>DEVELOPING</span>) - Public repository to manage your sideloaded applications on iOS.");
+    createText("lukIOs (<span class='green'>MAINTAINED</span>) - My personal URL shortener.");
   }
-  else if(value === "repo" || value === "Repo"){
+  else if(value.toLowerCase() === "repo"){
     trueValue(value);
     createText("<a href='https://raw.githubusercontent.com/lukiiimohhU/lukIOs/refs/heads/main/repo'>CTRL + Click me to add to KravaSign || Feather</a>")
   }
-  else if(value === "whoami" || value === "Whoami"){
+  else if(value.toLowerCase() === "whoami"){
     trueValue(value);
     createText("Hello, I am luk! ;)")
     createText("Student from the University of Jaén, awaiting for an Erasmus in <span class='red'>Bern (Switzerland)</span>, focused on learning <span class='blue'>C++</span>.")
   }
-  else if(value === "social -a" || value === "Social -a"){
+  else if(value.toLowerCase() === "social -a"){
     trueValue(value);
     // Discord
     createText("<a href='https://discord.com/users/279274634346758144' target='_blank'><i class='fab fa-discord white'></i> Discord</a>")
   }
-  else if(value === "social" || value === "Social"){
+  else if(value.toLowerCase() === "social"){
     trueValue(value);
     createText("Did you mean: <span class='blue'>social -a</span>?")
   }
-  else if(value === "clear" || value === "Clear"){
+  else if (value.toLowerCase() === "cd lurlkksss") {
+        trueValue(value);
+        createText("Navigating to url.lukksss.es...");
+        setTimeout(() => {
+          window.location.href = "https://url.lukksss.es/ui";
+        }, 1000);
+  }
+  else if(value.toLowerCase() === "clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
