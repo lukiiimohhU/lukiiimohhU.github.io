@@ -359,7 +359,7 @@ function showCertificateModal() {
 
       const text = await response.text();
       if (response.ok) {
-        const shortUrl = `https://url.lukksss.es/${slug}`;
+        const shortUrl = `https://url.lukksss.es/r/${slug}`;
         createText(`<a href="${shortUrl}" target="_blank">${shortUrl}</a>`, "success");
         document.body.removeChild(modal); // Close modal
         await delay(150); // Brief delay to ensure URL is displayed
