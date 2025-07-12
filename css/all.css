@@ -4584,3 +4584,108 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+/* Certificate modal styling to mimic terminal */
+.certificate-modal {
+  background: #1a1a1a !important; /* Dark terminal background */
+  border: 1px solid #444;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 14px; /* Match terminal font size */
+  color: #00ff00 !important; /* Green terminal text */
+}
+
+/* Title bar for the modal */
+.certificate-modal .title {
+  background: #333;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+
+/* Title bar buttons (mimic window controls) */
+.certificate-modal .title-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.certificate-modal .title-button.close {
+  background: #ff5f56;
+}
+.certificate-modal .title-button.minimize {
+  background: #ffbd2e;
+}
+.certificate-modal .title-button.maximize {
+  background: #27c93f;
+}
+
+/* File input button styling */
+.certificate-modal input[type="file"] {
+  display: none; /* Hide default file input */
+}
+.certificate-modal .file-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: #555 !important; /* Gray tone */
+  color: #fff !important;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 14px; /* Match terminal */
+}
+.certificate-modal .file-button:disabled {
+  background: #333 !important;
+  cursor: not-allowed;
+}
+.certificate-modal .file-button::before {
+  content: '\f07c'; /* Font Awesome open folder icon */
+  font-family: 'fa-solid-900', 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+/* File selection text */
+.certificate-modal .file-selection-text {
+  display: block; /* Place below button */
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 12px !important; /* Smaller than terminal text */
+  color: #00ff00 !important;
+  margin-top: 5px;
+}
+
+/* Input fields (password and slug) */
+.certificate-modal input[type="password"],
+.certificate-modal input[type="text"] {
+  background: #1a1a1a !important;
+  border: 1px solid #444;
+  color: #00ff00 !important;
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 14px !important; /* Match terminal */
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Process and Close buttons */
+.certificate-modal button {
+  font-family: 'Courier New', Courier, monospace !important;
+  font-size: 14px !important; /* Match terminal */
+  color: #fff !important;
+  background: #555 !important; /* Gray tone */
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.certificate-modal button:disabled {
+  background: #333 !important;
+  cursor: not-allowed;
+}
+.certificate-modal button:not(:disabled):hover {
+  background: #666 !important;
+}
+.certificate-modal #processCertificate:not(:disabled) {
+  background: #28a745 !important; /* Green when enabled */
+}
