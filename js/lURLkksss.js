@@ -75,13 +75,11 @@ maximizeButton.addEventListener('click', () => {
     }
   }
 });
-    
-    
+
 app.addEventListener("keypress", async function(event){
   if(event.key === "Enter"){
     await delay(150);
-   getInputValue();
-   
+    getInputValue();
     removeInput();
     await delay(150);
     new_line();
@@ -91,8 +89,7 @@ app.addEventListener("keypress", async function(event){
 app.addEventListener("click", function(event){
   const input = document.getElementById("commandInput");
   input.focus();
-})
-
+});
 
 async function open_terminal(){
   createText("Starting server...");
@@ -105,12 +102,11 @@ async function open_terminal(){
   new_line();
 }
 
-
 function new_line(){
   const p = document.createElement("p");
   const span1 = document.createElement("span");
   const span2 = document.createElement("span");
-  p.setAttribute("class", "path")
+  p.setAttribute("class", "path");
   p.textContent = "# user";
   span1.textContent = " in";
   span2.textContent = " ~/lukiiimohhU";
@@ -118,9 +114,9 @@ function new_line(){
   p.appendChild(span2);
   app.appendChild(p);
   const div = document.createElement("div");
-  div.setAttribute("class", "type")
+  div.setAttribute("class", "type");
   const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone")
+  i.setAttribute("class", "fas fa-angle-right icone");
   const input = document.createElement("input");
   input.id = "commandInput";
   div.appendChild(i);
@@ -248,72 +244,210 @@ function moveToCenter(callback) {
   }, { once: true });
 }
 
+// Function to create and show the certificate modal
+function showCertificateModal() {
+  const modal = document.createElement("div");
+  modal.setAttribute("class", "certificate-modal");
+  modal.style.position = "fixed";
+  modal.style.top = "50%";
+  modal.style.left = "50%";
+  modal.style.transform = "translate(-50%, -50%)";
+  modal.style.background = "#333";
+  modal.style.padding = "20px";
+  modal.style.borderRadius = "5px";
+  modal.style.boxShadow = "0 0 10px rgba(0,0,0,0.5)";
+  modal.style.zIndex = "1000";
+  modal.style.color = "#fff";
+  modal.style.fontFamily = "monospace";
+
+  modal.innerHTML = `
+    <h2>Certificate Processor</h2>
+    <div style="margin-bottom: 10px;">
+      <label for="mobileprovision">.mobileprovision:</label>
+      <input type="file" id="mobileprovision" accept=".mobileprovision" style="margin-left: 10px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="p12">.p12:</label>
+      <input type="file" id="p12" accept=".p12" style="margin-left: 10px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="password">Password:</label>
+      <input type="password" id="password" style="margin-left: 10px;">
+    </div>
+    <div style="margin-bottom: 10px;">
+      <label for="slug">Slug:</label>
+      <input type="text" id="slug" style="margin-left: 10px;">
+    </div>
+    <button id="processCertificate" disabled style="padding: 5px 10px; background: #555; color: #fff; border: none; border-radius: 3px;">Process Certificate</button>
+    <button id="closeModal" style="padding: 5px 10px; background: #555; color: #fff; border: none; border-radius: 3px; margin-left: 10px;">Close</button>
+  `;
+
+  document.body.appendChild(modal);
+
+  const mobileprovisionInput = modal.querySelector("#mobileprovision");
+  const p12Input = modal.querySelector("#p12");
+  const passwordInput = modal.querySelector("#password");
+  const slugInput = modal.querySelector("#slug");
+  const processButton = modal.querySelector("#processCertificate");
+  const closeButton = modal.querySelector("#closeModal");
+
+  let mobileprovisionFile = null;
+  let p12File = null;
+
+  // Enable/disable process button based on input completion
+  function updateProcessButton() {
+    if (mobileprovisionFile && p12File && passwordInput.value && slugInput.value) {
+      processButton.disabled = false;
+      processButton.style.background = "#28a745";
+    } else {
+      processButton.disabled = true;
+      processButton.style.background = "#555";
+    }
+  }
+
+  mobileprovisionInput.addEventListener("change", (event) => {
+    mobileprovisionFile = event.target.files[0];
+    if (mobileprovisionFile) {
+      mobileprovisionInput.disabled = true;
+      mobileprovisionInput.style.background = "#555";
+    }
+    updateProcessButton();
+  });
+
+  p12Input.addEventListener("change", (event) => {
+    p12File = event.target.files[0];
+    if (p12File) {
+      p12Input.disabled = true;
+      p12Input.style.background = "#555";
+    }
+    updateProcessButton();
+  });
+
+  passwordInput.addEventListener("input", updateProcessButton);
+  slugInput.addEventListener("input", updateProcessButton);
+
+  processButton.addEventListener("click", async () => {
+    if (!mobileprovisionFile || !p12File || !passwordInput.value || !slugInput.value) {
+      createText("Please fill all fields.", "error");
+      return;
+    }
+
+    try {
+      // Convert files and password to base64
+      const mobileprovisionBase64 = await fileToBase64(mobileprovisionFile);
+      const p12Base64 = await fileToBase64(p12File);
+      const passwordBase64 = btoa(passwordInput.value);
+
+      // Create feather URL
+      const featherUrl = `feather://import-certificate?p12=${encodeURIComponent(p12Base64)}&mobileprovision=${encodeURIComponent(mobileprovisionBase64)}&password=${encodeURIComponent(passwordBase64)}`;
+
+      // Create short URL
+      const slug = slugInput.value;
+      const response = await fetch('/create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug, destination: featherUrl })
+      });
+
+      const text = await response.text();
+      if (response.ok) {
+        const shortUrl = `https://url.lukksss.es/${slug}`;
+        createText(`<a href="${shortUrl}" target="_blank">${shortUrl}</a>`, "success");
+      } else {
+        createText(text, "error");
+      }
+
+      // Close modal after processing
+      document.body.removeChild(modal);
+    } catch (error) {
+      createText("Error: " + error.message, "error");
+    }
+  });
+
+  closeButton.addEventListener("click", () => {
+    document.body.removeChild(modal);
+  });
+}
+
+// Helper function to convert file to base64
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result.split(',')[1]); // Remove data URL prefix
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
 async function getInputValue(){
-  
   const value = document.getElementById("commandInput").value;
-  if(value === "help" || value === "Help"){
+  if(value.toLowerCase() === "help"){
     trueValue(value);
     createCode("shorten", "Create a short URL.");
     createCode("cd lukksss", "Navigate to lukksss.es");
     createCode("clear", "Clean the terminal.");
+    createCode("certificate", "Open certificate processor interface.");
   }
-  else if(value === "dvd" || value === "Dvd"){
+  else if(value.toLowerCase() === "dvd"){
     trueValue(value);
     await startDvdAnimation();
   }
   else if (value.toLowerCase() === "shorten") {
-        trueValue(value);
-        createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
-      } else if (value.toLowerCase().startsWith("shorten ")) {
-        trueValue(value);
-        const args = value.split(" ").slice(1);
-        if (args.length !== 2) {
-          createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
-          return;
-        }
-        const [slug, destination] = args;
-        try {
-          const response = await fetch('/create', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ slug, destination })
-          });
-          const text = await response.text();
-          if (response.ok) {
-            const link = 'https://url.lukksss.es/' + slug;
-            createText('<a href="' + link + '" target="_blank">' + link + '</a>', "sucess");
-          } else {
-            createText(text, "error");
-          }
-        } catch (error) {
-          createText("Error: " + error.message, "error");
-        }
-      }    
+    trueValue(value);
+    createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
+  } else if (value.toLowerCase().startsWith("shorten ")) {
+    trueValue(value);
+    const args = value.split(" ").slice(1);
+    if (args.length !== 2) {
+      createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
+      return;
+    }
+    const [slug, destination] = args;
+    try {
+      const response = await fetch('/create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug, destination })
+      });
+      const text = await response.text();
+      if (response.ok) {
+        const link = 'https://url.lukksss.es/' + slug;
+        createText('<a href="' + link + '" target="_blank">' + link + '</a>', "success");
+      } else {
+        createText(text, "error");
+      }
+    } catch (error) {
+      createText("Error: " + error.message, "error");
+    }
+  }    
   else if (value.toLowerCase() === "cd lukksss") {
-        trueValue(value);
-        createText("Navigating to lukksss.es...");
-        setTimeout(() => {
-          window.location.href = "https://lukksss.es";
-        }, 1000);
+    trueValue(value);
+    createText("Navigating to lukksss.es...");
+    setTimeout(() => {
+      window.location.href = "https://lukksss.es";
+    }, 1000);
   }
-  else if(value === "clear" || value === "Clear"){
+  else if(value.toLowerCase() === "clear"){
     document.querySelectorAll("p").forEach(e => e.parentNode.removeChild(e));
     document.querySelectorAll("section").forEach(e => e.parentNode.removeChild(e));
   }
+  else if(value.toLowerCase() === "certificate"){
+    trueValue(value);
+    showCertificateModal();
+  }
   else{
     falseValue(value);
-    createText(`command not found: ${value}`)
+    createText(`command not found: ${value}`);
   }
 }
 
 function trueValue(value){
-  
   const div = document.createElement("section");
-  div.setAttribute("class", "type2")
+  div.setAttribute("class", "type2");
   const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone")
+  i.setAttribute("class", "fas fa-angle-right icone");
   const mensagem = document.createElement("h2");
-  mensagem.setAttribute("class", "sucess")
+  mensagem.setAttribute("class", "success");
   mensagem.textContent = `${value}`;
   div.appendChild(i);
   div.appendChild(mensagem);
@@ -321,13 +455,12 @@ function trueValue(value){
 }
 
 function falseValue(value){
-  
   const div = document.createElement("section");
-  div.setAttribute("class", "type2")
+  div.setAttribute("class", "type2");
   const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone error")
+  i.setAttribute("class", "fas fa-angle-right icone error");
   const mensagem = document.createElement("h2");
-  mensagem.setAttribute("class", "error")
+  mensagem.setAttribute("class", "error");
   mensagem.textContent = `${value}`;
   div.appendChild(i);
   div.appendChild(mensagem);
@@ -336,16 +469,15 @@ function falseValue(value){
 
 function createText(text, classname){
   const p = document.createElement("p");
-  
   p.innerHTML = text;
+  if (classname) p.setAttribute("class", classname);
   app.appendChild(p);
 }
 
 function createCode(code, text){
   const p = document.createElement("p");
   p.setAttribute("class", "code");
-  p.innerHTML =
- `${code} <br/><span class='text'> ${text} </span>`;
+  p.innerHTML = `${code} <br/><span class='text'> ${text} </span>`;
   app.appendChild(p);
 }
 
