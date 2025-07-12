@@ -4590,7 +4590,8 @@ readers do not read off random characters that represent icons */
   border: 1px solid #444;
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 14px; /* Match terminal font size */
-  color: #00ff00 !important; /* Green terminal text */
+  color: #ffffff !important; /* White text */
+  border-radius: 10px !important; /* Rounded corners */
 }
 
 /* Title bar for the modal */
@@ -4598,9 +4599,11 @@ readers do not read off random characters that represent icons */
   background: #333;
   padding: 5px 10px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start; /* Align buttons to the left */
   align-items: center;
   border-bottom: 1px solid #444;
+  border-top-left-radius: 10px; /* Match modal's rounded corners */
+  border-top-right-radius: 10px;
 }
 
 /* Title bar buttons (mimic window controls) */
@@ -4608,7 +4611,7 @@ readers do not read off random characters that represent icons */
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-left: 8px;
+  margin-right: 8px; /* Changed from margin-left to margin-right for left alignment */
   cursor: pointer;
 }
 .certificate-modal .title-button.close {
@@ -4630,7 +4633,7 @@ readers do not read off random characters that represent icons */
   align-items: center;
   padding: 5px 10px;
   background: #555 !important; /* Gray tone */
-  color: #fff !important;
+  color: #ffffff !important; /* White text */
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -4653,7 +4656,7 @@ readers do not read off random characters that represent icons */
   display: block; /* Place below button */
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 12px !important; /* Smaller than terminal text */
-  color: #00ff00 !important;
+  color: #ffffff !important; /* White text */
   margin-top: 5px;
 }
 
@@ -4662,7 +4665,7 @@ readers do not read off random characters that represent icons */
 .certificate-modal input[type="text"] {
   background: #1a1a1a !important;
   border: 1px solid #444;
-  color: #00ff00 !important;
+  color: #ffffff !important; /* White text */
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 14px !important; /* Match terminal */
   padding: 5px;
@@ -4673,7 +4676,7 @@ readers do not read off random characters that represent icons */
 .certificate-modal button {
   font-family: 'Courier New', Courier, monospace !important;
   font-size: 14px !important; /* Match terminal */
-  color: #fff !important;
+  color: #ffffff !important; /* White text */
   background: #555 !important; /* Gray tone */
   border: none;
   border-radius: 3px;
