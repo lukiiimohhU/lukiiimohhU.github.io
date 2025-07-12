@@ -252,34 +252,41 @@ function showCertificateModal() {
   modal.style.top = "50%";
   modal.style.left = "50%";
   modal.style.transform = "translate(-50%, -50%)";
-  modal.style.background = "#333";
-  modal.style.padding = "20px";
-  modal.style.borderRadius = "5px";
-  modal.style.boxShadow = "0 0 10px rgba(0,0,0,0.5)";
   modal.style.zIndex = "1000";
-  modal.style.color = "#fff";
-  modal.style.fontFamily = "monospace";
+  modal.style.width = "400px"; // Fixed width for consistency
+  modal.style.padding = "0"; // Remove padding to let title and content handle spacing
 
   modal.innerHTML = `
-    <h2>Certificate Processor</h2>
-    <div style="margin-bottom: 10px;">
-      <label for="mobileprovision">.mobileprovision:</label>
-      <input type="file" id="mobileprovision" accept=".mobileprovision" style="margin-left: 10px;">
+    <div class="title">
+      <div class="title-button close"></div>
+      <div class="title-button minimize"></div>
+      <div class="title-button maximize"></div>
     </div>
-    <div style="margin-bottom: 10px;">
-      <label for="p12">.p12:</label>
-      <input type="file" id="p12" accept=".p12" style="margin-left: 10px;">
+    <div style="padding: 20px;">
+      <h2>Certificate Processor</h2>
+      <div style="margin-bottom: 10px;">
+        <label for="mobileprovision">.mobileprovision:</label><br>
+        <label class="file-button" for="mobileprovision">Select File</label>
+        <input type="file" id="mobileprovision" accept=".mobileprovision">
+        <span class="file-selection-text">No file selected</span>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="p12">.p12:</label><br>
+        <label class="file-button" for="p12">Select File</label>
+        <input type="file" id="p12" accept=".p12">
+        <span class="file-selection-text">No file selected</span>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" style="width: 100%;">
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label for="slug">Slug:</label><br>
+        <input type="text" id="slug" style="width: 100%;">
+      </div>
+      <button id="processCertificate" disabled>Process Certificate</button>
+      <button id="closeModal">Close</button>
     </div>
-    <div style="margin-bottom: 10px;">
-      <label for="password">Password:</label>
-      <input type="password" id="password" style="margin-left: 10px;">
-    </div>
-    <div style="margin-bottom: 10px;">
-      <label for="slug">Slug:</label>
-      <input type="text" id="slug" style="margin-left: 10px;">
-    </div>
-    <button id="processCertificate" disabled style="padding: 5px 10px; background: #555; color: #fff; border: none; border-radius: 3px;">Process Certificate</button>
-    <button id="closeModal" style="padding: 5px 10px; background: #555; color: #fff; border: none; border-radius: 3px; margin-left: 10px;">Close</button>
   `;
 
   document.body.appendChild(modal);
@@ -290,6 +297,9 @@ function showCertificateModal() {
   const slugInput = modal.querySelector("#slug");
   const processButton = modal.querySelector("#processCertificate");
   const closeButton = modal.querySelector("#closeModal");
+  const mobileprovisionText = modal.querySelector("#mobileprovision + .file-selection-text");
+  const p12Text = modal.querySelector("#p12 + .file-selection-text");
+  const closeTitleButton = modal.querySelector(".title-button.close");
 
   let mobileprovisionFile = null;
   let p12File = null;
@@ -298,10 +308,8 @@ function showCertificateModal() {
   function updateProcessButton() {
     if (mobileprovisionFile && p12File && passwordInput.value && slugInput.value) {
       processButton.disabled = false;
-      processButton.style.background = "#28a745";
     } else {
       processButton.disabled = true;
-      processButton.style.background = "#555";
     }
   }
 
@@ -309,7 +317,7 @@ function showCertificateModal() {
     mobileprovisionFile = event.target.files[0];
     if (mobileprovisionFile) {
       mobileprovisionInput.disabled = true;
-      mobileprovisionInput.style.background = "#555";
+      mobileprovisionText.textContent = mobileprovisionFile.name;
     }
     updateProcessButton();
   });
@@ -318,7 +326,7 @@ function showCertificateModal() {
     p12File = event.target.files[0];
     if (p12File) {
       p12Input.disabled = true;
-      p12Input.style.background = "#555";
+      p12Text.textContent = p12File.name;
     }
     updateProcessButton();
   });
@@ -353,18 +361,22 @@ function showCertificateModal() {
       if (response.ok) {
         const shortUrl = `https://url.lukksss.es/${slug}`;
         createText(`<a href="${shortUrl}" target="_blank">${shortUrl}</a>`, "success");
+        document.body.removeChild(modal); // Close modal
+        await delay(150); // Brief delay to ensure URL is displayed
+        new_line(); // Re-enable input
       } else {
         createText(text, "error");
       }
-
-      // Close modal after processing
-      document.body.removeChild(modal);
     } catch (error) {
       createText("Error: " + error.message, "error");
     }
   });
 
   closeButton.addEventListener("click", () => {
+    document.body.removeChild(modal);
+  });
+
+  closeTitleButton.addEventListener("click", () => {
     document.body.removeChild(modal);
   });
 }
@@ -394,12 +406,12 @@ async function getInputValue(){
   }
   else if (value.toLowerCase() === "shorten") {
     trueValue(value);
-    createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
+    createText("Usage: shorten <slug> <destination>", "error");
   } else if (value.toLowerCase().startsWith("shorten ")) {
     trueValue(value);
     const args = value.split(" ").slice(1);
     if (args.length !== 2) {
-      createText("Usage: shorten &lt;slug&gt; &lt;destination&gt;", "error");
+      createText("Usage: shorten <slug> <destination>", "error");
       return;
     }
     const [slug, destination] = args;
