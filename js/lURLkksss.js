@@ -285,7 +285,6 @@ function showCertificateModal() {
         <input type="text" id="slug" style="width: 100%;">
       </div>
       <button id="processCertificate" disabled>Process Certificate</button>
-      <button id="closeModal">Close</button>
     </div>
   `;
 
