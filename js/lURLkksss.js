@@ -372,10 +372,6 @@ function showCertificateModal() {
     }
   });
 
-  closeButton.addEventListener("click", () => {
-    document.body.removeChild(modal);
-  });
-
   closeTitleButton.addEventListener("click", () => {
     document.body.removeChild(modal);
   });
