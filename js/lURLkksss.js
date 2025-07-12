@@ -392,9 +392,9 @@ async function getInputValue(){
   if(value.toLowerCase() === "help"){
     trueValue(value);
     createCode("shorten", "Create a short URL.");
+    createCode("certificate", "Open certificate processor interface.");
     createCode("cd lukksss", "Navigate to lukksss.es");
     createCode("clear", "Clean the terminal.");
-    createCode("certificate", "Open certificate processor interface.");
   }
   else if(value.toLowerCase() === "dvd"){
     trueValue(value);
