@@ -267,9 +267,9 @@ async function getInputValue(){
   else if(value === "projects" || value === "Projects"){
     trueValue(value);
     //createText("nombreProyecto (<span class='red'>DISCONTINUED</span>) - Descripción proyecto. <span class='blue'> moreInfo </span>");
-    createText("lobos-del-chorraero (<span class='green'>MAINTAINED</span>) - WebGame designed and based in the original game \"Los lobos de Castronegro\", perfect to play with friends (4-16). ");
+    createText("lobos-del-chorraero (<span class='green'>DEVELOPING</span>) - WebGame designed and based in the original game \"Los lobos de Castronegro\", perfect to play with friends (4-16). ");
     createText("daypo-extractor (<span class='green'>MAINTAINED</span>) - Python script to extract daypo questions with their respective answer from daypos URLs and directly to local archives. ");
-    createText("lukIOs (<span class='blue'>DEVELOPING</span>) - Public repository to manage your sideloaded applications on iOS.");
+    createText("lukIOs (<span class='blue'>MAINTAINED</span>) - Public repository to manage your sideloaded applications on iOS.");
     createText("lukIOs (<span class='green'>MAINTAINED</span>) - My personal URL shortener.");
   }
   else if(value.toLowerCase() === "repo"){
@@ -279,7 +279,7 @@ async function getInputValue(){
   else if(value.toLowerCase() === "whoami"){
     trueValue(value);
     createText("Hello, I am luk! ;)")
-    createText("Student from the University of Jaén, awaiting for an Erasmus in <span class='red'>Bern (Switzerland)</span>, focused on learning <span class='blue'>C++</span>.")
+    createText("Student from the University of Jaén, in Erasmus at <span class='red'>Bern (Switzerland)</span>, focused on learning <span class='blue'>C++ & Java</span>.")
   }
   else if(value.toLowerCase() === "social -a"){
     trueValue(value);
